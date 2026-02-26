@@ -1,0 +1,93 @@
+:root {
+  --bg: #121212;
+  --panel: #1c1c1c;
+  --text: #efefef;
+  --muted: #b8b8b8;
+  --mustard: #d4a017;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top, #232323, var(--bg) 45%);
+  color: var(--text);
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+.hero,
+.services,
+.cta {
+  margin-bottom: 4rem;
+}
+
+.kicker {
+  color: var(--mustard);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+}
+
+h1,
+h2,
+h3,
+strong {
+  margin: 0;
+}
+
+.hero h1,
+.services h2,
+.cta h2 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 70ch;
+}
+
+.accent {
+  color: var(--mustard);
+}
+
+.serviceGrid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.serviceCard {
+  background: var(--panel);
+  border: 1px solid #2f2f2f;
+  border-radius: 14px;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.serviceCard h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.serviceCard p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.serviceCard strong {
+  color: var(--mustard);
+  font-size: 1.5rem;
+}
